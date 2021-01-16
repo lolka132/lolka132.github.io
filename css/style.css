@@ -1,0 +1,408 @@
+:root {
+    --red: #FF0000;
+    --black: #4f07f7;
+    --green: #008000;
+}
+
+/* !!!1rem = 16px!!! */
+
+.bold{
+    color: var(--red);
+    font-weight: bold;
+}
+
+body{
+    margin: 0;
+    /* font-family: 'Redressed', cursive; */
+    font-family: 'Xanh Mono', monospace;
+    font-size: 1rem;
+    color: black;
+   
+}
+
+
+
+
+h1, h2, h3, h4,h5,h6 {
+    margin: 0;
+}
+
+p{
+    margin: 0 o 1rem;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box; 
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 1rem;
+    padding-right: 1 rem;
+    margin: 0 auto;
+}
+
+.header{
+    padding: 1.2rem 0;
+    position: relative;
+    background-color: yellow;
+    /* opacity: 0.9; */
+    
+}
+
+.header_inner{
+    display: flex;
+    justify-content:space-between;  
+    align-items: center;
+}
+
+.user{
+    display: flex;
+}
+.user_avatar{
+    border-radius: 50% ;
+}
+.user_content{
+    padding-left: 9px;
+}
+.user_name{
+    font-size: 16px;
+    color: var(--black);
+    font-weight: bold; 
+    margin-bottom: 3px;
+}
+
+.user_prof{
+    font-size: 0.75rem;
+    color: var(--black);
+    opacity: 0.7;
+}
+
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+}
+
+.nav_link{
+     margin-left: 2rem;
+     position: relative;
+     font-size: 0.9rem;
+     color:var(--black);
+     font-weight: bold;
+     text-transform: uppercase;
+     text-decoration: none;
+}
+
+.nav_link:hover{
+    border-bottom: 2px solid black;
+    padding: 0 0 4px;
+}
+.intro_inner{
+    display: flex;
+    padding-top: 6.6rem;
+    padding-bottom: 8rem;
+    position: relative;
+    
+
+    border-bottom: 1px solid blue;
+}
+
+.intro_photo{
+    box-shadow: 0 0 10px red;
+    border-radius: 0.75rem;
+    opacity: 0;
+}
+.intro_photo:hover{
+    box-shadow: 0 0 20px black;
+    border-radius: 0.7rem;
+    opacity: 1;
+}
+
+.intro_subtitle{
+    color: var(--black);
+    font-weight: 200;
+    font-style: 2rem;
+}
+
+.intro_title{
+    color: black;
+    font-weight: bold;
+    font-style: 3rem;
+    margin-bottom: 5px;
+}
+
+.intro_text{
+    color:black;
+    opacity: 0.7;
+    font-style: 1.2rem ;    
+}
+
+.social{
+    margin-top: 2rem;
+    margin-bottom: 2.2rem;
+    display: flex;
+    
+}
+
+.social_link{
+    margin-right: 0.75rem;
+    text-decoration: none;
+    box-shadow: 0 0 20px black;
+    border-radius: 70%;
+}
+
+.social_link:hover  { /* псевдокласс для класса иконки соц.сетей */
+        /* transform: translateY(-10px); */
+        transform: translateY(-10px);
+        box-shadow: 0 0 20px red;
+
+}
+
+.btn{
+    display: inline-block;
+    vertical-align: top;
+    width:  12.5rem;
+    border: 1px solid red;
+    border-radius: 1.8rem;
+    background-color: none;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.btn:hover{ /* создание псевдокласса для класса кнопка */
+
+    background-color:var(--black); 
+    color: white;
+}
+
+.intro_photo{
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    z-index: 1;
+    margin-bottom: 1rem;
+}
+
+.text_center{
+    margin-top: 3.5rem;
+    margin-bottom:1.5rem ;
+    text-align: center;
+
+    font-size: 2.8rem;
+    color:black;
+    font-weight: bold;
+}
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work{
+    overflow: hidden;
+    box-shadow:  0 0 10px black ;/*  сдвиг по оси Х , сдвиг по оси У, радиус размытия тени, цвет тени */
+    border-radius: 10px; /* скругление чего-либо, в данном случаи идёт скругление тени */
+    margin-bottom: 2rem;
+}
+.work:hover{ /* 25px; прсевдокласс для класса work */
+    box-shadow: 0 0 25px red;
+}
+
+.work_content{ 
+    padding: 1rem 0.8rem; /* внутренний отступы (top , right, bottom, left) */
+}
+.work_cat{
+    font-size: 0.75rem;
+    color:black;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem ; /* внешние отступы*/ 
+}
+
+.work_title{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: black;
+    opacity: 0.7;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.portfolio{
+    justify-content: space-between;
+}
+
+.works{
+    margin-bottom: 7rem;
+}
+
+.about_inner{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 7rem;
+}
+
+.about_photo{
+    max-width: 50%;
+    /* padding-left: 3.3rem; */
+    box-shadow: 0 0 15px red; 
+    border-radius: 0.75rem;
+    opacity: 0;
+
+}
+
+.about_photo:hover{
+    box-shadow: 0 0 20px rgb(51, 0, 38);
+    opacity: 1;
+}
+
+.about_content{
+    width: 50%;
+    margin-top: 5rem;
+    padding-left: 7.5rem;
+}
+
+.about_title{
+    font-size: 2.8rem;
+    font-weight: bold;
+    color:black;
+    text-transform: uppercase;
+}
+
+.big_title{
+    font-size: 5.75rem;
+    color:black;
+    opacity: 0.5;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.about_text{
+    margin-top: 2.5rem  ;
+    margin-bottom: 3.5rem;
+    font-size: 0.75rem;
+    font-weight: 300;
+    color:gray;
+}
+.reviews_text{
+    font-size: 0.9rem;
+    color:white;
+    text-align: center;
+}
+
+.reviews{
+    background: #332f30 url(/src/icons/reviews.png) center no-repeat; /* center- изображение будет по центру no-repeat- изображение не будет повторяться */ 
+    padding: 3rem 0; /* 3rem - сверху/снизу, 0-право/лево */
+    position: relative;
+}
+
+.reviews_inner{
+    width: 100%;
+    max-width: 830px;
+    margin: 0 auto;
+    
+}
+
+.reviews_author{
+    width: 100%;
+    margin-top: -30px;/*  будет залазивать на 51px на другой блок */
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+    left: 0;
+}
+
+.reviews_compony{
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+
+}
+
+.reviews_name{
+    margin-bottom: 0.5rem;
+    color:gray;
+    font-size: 0.9rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.reviews_stars_5{
+    opacity: 50%;
+}
+
+.reviews_rating{
+    margin-bottom: 6rem;
+}
+
+.courses{
+    margin-top: 14rem;
+    margin-bottom: 8rem;
+}
+
+.subtitle{
+    text-align: center;
+    font-size: 1.1rem;
+    color: blue;
+    font-weight: 300;
+}
+
+.margin{
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    text-transform: uppercase;
+}
+
+.courses_inner{
+    margin-top: 3.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course{
+    width: 33.33%;
+    padding: 0 1rem;
+}
+
+.course_name{
+    margin-top: 1.3rem;
+    margin-bottom: 0.6rem;
+    font-size: 1.1rem;
+    color:black;
+    font-weight: bold;
+}
+
+.courses_cat{
+    font-size: 0.75rem;
+    color: gray;
+}
+
+.courses_text {
+    font-size: 0.75rem;
+    color:gray;
+    font-weight: 300;
+}
+
+.btn_edit{
+    margin-top: 1.5rem;
+    width: 130px;
+    height: 34px;
+
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    background-color: black;
+    color:white;
+}
+.b_text{
+    color: blue;
+}
